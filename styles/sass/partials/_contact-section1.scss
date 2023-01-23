@@ -1,0 +1,264 @@
+@use "./variables" as *;
+
+body {
+    background-color: $ice;
+}
+
+.section1-wrapper {
+    position: relative;
+
+    .nav1 {
+        width: 100%;
+        max-width: 1920px;
+        position: absolute;
+        top: 2%;
+        padding-right: 5%;
+
+        @media only screen and (max-width: 820px) {
+            display: none;
+        }
+    }
+
+    .nav1 ul {
+        list-style-type: none;
+        gap: 2%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .fa-bars {
+        display: none;
+
+        @media only screen and (max-width: 820px) {
+            background-color: rgb(241, 234, 234);
+            display: flex;
+            justify-content: flex-end;
+            font-size: 5vw;
+            padding: 2%
+        }
+    }
+
+    .image1-container {
+        width: 100%;
+        height: 100%;
+
+        .image1 {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .h1-container {
+        width: 100%;
+        height: 100%;
+
+        .contact-h1 {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 5%;
+            right: 0;
+            top: 15%;
+            text-align: center;
+            z-index: 1;
+
+            @media only screen and (max-width: 820px) {
+                top: 15%;
+                left: 30%;
+                width: 50%;
+                text-align: center;
+                border-bottom: 10px solid $yellow;
+            }
+        }
+    }
+
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        @media only screen and (max-width: 820px) {  
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .contact-info {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            
+            @media only screen and (max-width: 820px) {
+                width: 100%;
+            }
+
+            .contact-all {
+                height: 70%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                @media only screen and (max-width: 820px) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    width: 80%;
+                    justify-content: space-between;
+                    padding: 3% 0 2% 0;       
+                }
+
+                @media only screen and (max-width: 320px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .social-media {
+                    display: flex;
+                    gap: 10%;
+
+                    @media only screen and (max-width: 820px) {
+                        width: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        font-size: 2.5vw;
+                    }
+
+                    @media only screen and (max-width: 320px) {
+                        width: 90%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        font-size: 8vw;
+                    }
+                }
+
+                .email-info {
+                    @media only screen and (max-width: 820px) {
+                        width: 40%;
+                        font-size: 2.5vw;
+                    }
+
+                    @media only screen and (max-width: 320px) {
+                        width: 90%;
+                    }
+                }
+
+                .phone-address {
+                    margin: 0;
+
+                    @media only screen and (max-width: 820px) {
+                        width: 35%;
+                    }
+
+                    @media only screen and (max-width: 320px) {
+                        width: 100%;
+                    }
+                }
+            }     
+        }
+
+        .form1 {
+            background-color: white;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: -85px 53px 0px -30px rgba(253, 250, 105, 1);
+                -webkit-box-shadow: -85px 53px 0px -30px rgba(253, 250, 105, 1);
+                -moz-box-shadow: -85px 53px 0px -30px rgba(253, 250, 105, 1);
+            transform: translateY(-30%);
+            padding-top: 7%;
+            margin-right: 5%;
+
+            @media only screen and (max-width: 820px) {
+                width: 100%;
+                // margin: 10% 0 5% 0;
+                padding: 0;
+                transform: none;
+                box-shadow: none;
+            }
+              
+            .form-upper {
+                width: 80%;
+                display: flex;
+                gap: 5%;
+
+                @media only screen and (max-width: 820px) {
+                    padding-top: 5%;
+                }
+                
+                .name,
+                .email-address {
+                    width: 50%;
+                
+                    input {
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $sea-green;
+                        padding: 1vh;            
+                    }  
+                }        
+            }
+
+            .message {
+                width: 100%;
+                padding: 5% 0 0 0;
+                display: flex;
+                justify-content: center;
+
+                textarea {
+                    width: 80%;
+                    height: auto;        
+                    border: 2px solid $sea-green; 
+                    box-sizing: border-box;
+                    padding: 3% 0 0 3%;
+  
+                }
+            }
+
+            .submit {
+                width: 80%;
+                margin: 5% 0;
+                border: none;
+                background-color: $sea-green;
+                padding: 1% 2%;
+                text-align: center;
+            }
+        }     
+    }
+}
+    
+.contact-footer {
+    background-color: $black;
+    padding: 1%;
+    
+    .copyright {
+        margin: 0;
+    }
+}
+
+.nav1-a3:hover {
+    color: $sea-green;
+}
+
+.submit-button:hover {
+    color: $yellow;
+}
+
+.fa-facebook-f:hover {
+    color: $sea-green;
+}
+
+.fa-instagram:hover {
+    color: $sea-green;
+}
+
+.fa-twitter:hover {
+    color: $sea-green;
+}
+
+.fa-whatsapp:hover {
+    color: $sea-green;
+}
