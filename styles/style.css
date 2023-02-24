@@ -389,17 +389,17 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .button1,
-.button2,
-.button3,
-.button4 {
+  .button2,
+  .button3,
+  .button4 {
     font-size: 2.5vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .button1,
-.button2,
-.button3,
-.button4 {
+  .button2,
+  .button3,
+  .button4 {
     font-size: 3.5vw;
   }
 }
@@ -513,25 +513,25 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .form-container input,
-.form-container2 input {
+  .form-container2 input {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container input,
-.form-container2 input {
+  .form-container2 input {
     font-size: 3.5vw;
   }
 }
 @media only screen and (max-width: 820px) {
   .form-container textarea,
-.form-container2 textarea {
+  .form-container2 textarea {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container textarea,
-.form-container2 textarea {
+  .form-container2 textarea {
     font-size: 3.5vw;
   }
 }
@@ -546,13 +546,13 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .form-container .submit-button,
-.form-container2 .submit-button {
+  .form-container2 .submit-button {
     font-size: 2.5vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container .submit-button,
-.form-container2 .submit-button {
+  .form-container2 .submit-button {
     font-size: 3.5vw;
   }
 }
@@ -585,8 +585,8 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .p7,
-.p8,
-.p9 {
+  .p8,
+  .p9 {
     text-align: left;
     font-size: 2vw;
     line-height: 2.5vw;
@@ -594,8 +594,8 @@ h1 {
 }
 @media only screen and (max-width: 320px) {
   .p7,
-.p8,
-.p9 {
+  .p8,
+  .p9 {
     text-align: center;
     font-size: 4vw;
     line-height: 5vw;
@@ -630,14 +630,14 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .lower-p1-h3,
-.lower-p2-h3 {
+  .lower-p2-h3 {
     font-size: 5vw;
     text-align: center;
   }
 }
 @media only screen and (max-width: 320px) {
   .lower-p1-h3,
-.lower-p2-h3 {
+  .lower-p2-h3 {
     font-size: 6vw;
     text-align: center;
   }
@@ -830,11 +830,6 @@ body {
   top: 2%;
   padding-right: 5%;
 }
-@media only screen and (max-width: 820px) {
-  .section1-wrapper .nav1 {
-    display: none;
-  }
-}
 .section1-wrapper .nav1 ul {
   list-style-type: none;
   gap: 2%;
@@ -850,8 +845,10 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 820px) {
+  .section1-wrapper .nav1 ul {
+    display: none;
+  }
   .section1-wrapper .fa-bars {
-    background-color: rgb(241, 234, 234);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -860,6 +857,33 @@ body {
             justify-content: flex-end;
     font-size: 5vw;
     padding: 2%;
+    background-color: rgb(241, 234, 234);
+  }
+  .section1-wrapper .nav1 ul.nav-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 1;
+  }
+  .section1-wrapper .nav1-a1 {
+    font-size: 4vw;
+  }
+  .section1-wrapper .home1 {
+    font-size: 6vw;
+    font-weight: bold;
   }
 }
 .section1-wrapper .image1 {
@@ -1467,15 +1491,15 @@ footer .gallery-container .gallery3 {
 }
 @media only screen and (max-width: 820px) {
   footer .gallery-container .gallery1,
-footer .gallery-container .gallery2,
-footer .gallery-container .gallery3 {
+  footer .gallery-container .gallery2,
+  footer .gallery-container .gallery3 {
     width: 48%;
   }
 }
 @media only screen and (max-width: 320px) {
   footer .gallery-container .gallery1,
-footer .gallery-container .gallery2,
-footer .gallery-container .gallery3 {
+  footer .gallery-container .gallery2,
+  footer .gallery-container .gallery3 {
     width: 70%;
     padding: 1% 0;
   }

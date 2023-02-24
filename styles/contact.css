@@ -389,17 +389,17 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .button1,
-.button2,
-.button3,
-.button4 {
+  .button2,
+  .button3,
+  .button4 {
     font-size: 2.5vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .button1,
-.button2,
-.button3,
-.button4 {
+  .button2,
+  .button3,
+  .button4 {
     font-size: 3.5vw;
   }
 }
@@ -513,25 +513,25 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .form-container input,
-.form-container2 input {
+  .form-container2 input {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container input,
-.form-container2 input {
+  .form-container2 input {
     font-size: 3.5vw;
   }
 }
 @media only screen and (max-width: 820px) {
   .form-container textarea,
-.form-container2 textarea {
+  .form-container2 textarea {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container textarea,
-.form-container2 textarea {
+  .form-container2 textarea {
     font-size: 3.5vw;
   }
 }
@@ -546,13 +546,13 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .form-container .submit-button,
-.form-container2 .submit-button {
+  .form-container2 .submit-button {
     font-size: 2.5vw;
   }
 }
 @media only screen and (max-width: 320px) {
   .form-container .submit-button,
-.form-container2 .submit-button {
+  .form-container2 .submit-button {
     font-size: 3.5vw;
   }
 }
@@ -585,8 +585,8 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .p7,
-.p8,
-.p9 {
+  .p8,
+  .p9 {
     text-align: left;
     font-size: 2vw;
     line-height: 2.5vw;
@@ -594,8 +594,8 @@ h1 {
 }
 @media only screen and (max-width: 320px) {
   .p7,
-.p8,
-.p9 {
+  .p8,
+  .p9 {
     text-align: center;
     font-size: 4vw;
     line-height: 5vw;
@@ -630,14 +630,14 @@ h1 {
 }
 @media only screen and (max-width: 820px) {
   .lower-p1-h3,
-.lower-p2-h3 {
+  .lower-p2-h3 {
     font-size: 5vw;
     text-align: center;
   }
 }
 @media only screen and (max-width: 320px) {
   .lower-p1-h3,
-.lower-p2-h3 {
+  .lower-p2-h3 {
     font-size: 6vw;
     text-align: center;
   }

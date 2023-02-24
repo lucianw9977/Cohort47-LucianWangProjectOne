@@ -117,16 +117,16 @@
                             <form class="form2" action="#">
                                 <div class="form-upper">
                                     <div class="name">
-                                        <input type="text" aria-label="Enter your name" id="userName" name="userName" placeholder="Name">
+                                        <input type="text" aria-label="Enter your name" id="userName" name="userName" placeholder="Name" required>
                                         <label for="userName"></label>                                  
                                     </div>   
                                     <div class="email-address">
-                                        <input type="text" aria-label="Enter your Email address" id="emailAddress" name="emailAddress" placeholder="Email address">
+                                        <input type="text" aria-label="Enter your Email address" id="emailAddress" name="emailAddress" placeholder="Email address" required>
                                         <label for="emailAddress"></label>                
                                     </div>
                                 </div>
                                 <div class="comment">
-                                    <textarea name="userMessage" aria-label="Enter your comment" id="feedback" placeholder="Comment" cols="30" rows="10"></textarea>
+                                    <textarea name="userMessage" aria-label="Enter your comment" id="feedback" placeholder="Comment" cols="30" rows="10" minlength="10" maxlength="300" required></textarea>
                                     <label for="Message"></label>            
                                 </div>
                                 <div class="blog-submit">
@@ -145,5 +145,6 @@
     <footer class="blog-footer">
         <p class="copyright">Copyright © 2018 HackerYou</p>
     </footer>     
+    <script src="./scripts/blog.js"></script>
 </body>
 </html>
